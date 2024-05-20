@@ -35,7 +35,7 @@ spec:
     controller:
       service:
         annotations:
-          service.beta.kubernetes.io/azure-dns-label-name: akstest
+          service.beta.kubernetes.io/azure-dns-label-name: ygakstest
           service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path: /healthz
     admissionWebhooks:
       enabled: false
