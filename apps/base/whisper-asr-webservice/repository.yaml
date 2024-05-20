@@ -5,6 +5,5 @@ metadata:
   namespace: whisper-asr-webservice
 spec:
   interval: 5m
-  url: oci://tccr.io/truecharts/whisper-asr-webservice
+  url: oci://tccr.io/truecharts
   type: "oci"
-  
