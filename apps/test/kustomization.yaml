@@ -3,10 +3,10 @@ kind: Kustomization
 namespace: whisper-asr-webservice
 resources:
   - ../base/whisper-asr-webservice
-patches:
-  - path: deployment-values.yaml
-    target:
-      kind: Deployment
+#patches:
+#  - path: deployment-values.yaml
+#    target:
+#      kind: Deployment
   #- path: whisper-asr-webservice-values.yaml
   #  target:
   #    kind: HelmRelease      
