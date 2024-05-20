@@ -3,9 +3,9 @@ kind: Ingress
 metadata:
   name: whisper-asr-webservice-ingress
   namespace: whisper-asr-webservice
-annotations:
-  kubernetes.io/ingress.class: nginx
-  cert-manager.io/cluster-issuer: letsencrypt  
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt  
 spec:
   tls:
   - hosts:

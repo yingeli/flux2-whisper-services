@@ -11,3 +11,5 @@ flux bootstrap github \
   --personal
 
   az aks get-credentials --name aks-test-sea --resource-group aks-test-sea
+
+  curl -X POST -H "content-type: multipart/form-data" -F "audio_file=@./audio/issue3/0_5f9df078-2617-4fbe-a01a-5c2e0a7f5d73.wav" https://whisper.yglabs.eu.org/detect-language?output=json
