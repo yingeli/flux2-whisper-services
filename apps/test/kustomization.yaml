@@ -4,6 +4,9 @@ namespace: whisper-asr-webservice
 resources:
   - ../base/whisper-asr-webservice
 patches:
-  - path: whisper-asr-webservice-values.yaml
+  - path: deployment-values.yaml
     target:
-      kind: HelmRelease
+      kind: Deployment
+  #- path: whisper-asr-webservice-values.yaml
+  #  target:
+  #    kind: HelmRelease      

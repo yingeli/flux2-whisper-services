@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whisper-asr-webservice
+  namespace: whisper-asr-webservice
+  labels:
+    app: whisper-asr-webservice  
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: whisper-asr-webservice
+  template:
+    metadata:
+      labels:
+        app: whisper-asr-webservice
+    spec:
+      containers:
+      - image: onerahmet/openai-whisper-asr-webservice:latest-gpu
+        name: whisper-asr-webservice-gpu
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+      tolerations:
+      - key: "sku"
+        operator: "Equal"
+        value: "gpu"
+        effect: "NoSchedule"
+      - key: "kubernetes.azure.com/scalesetpriority"
+        operator: "Equal"
+        value: "spot"
+        effect: "NoSchedule"

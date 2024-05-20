@@ -3,5 +3,7 @@ kind: Kustomization
 namespace: whisper-asr-webservice
 resources:
   - namespace.yaml
-  - repository.yaml
-  - release.yaml
+  - deployment.yaml
+  - service.yaml
+  #- repository.yaml
+  #- release.yaml
