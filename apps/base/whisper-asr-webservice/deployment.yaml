@@ -6,7 +6,7 @@ metadata:
   labels:
     app: whisper-asr-webservice  
 spec:
-  replicas: 7
+  replicas: 0
   selector:
     matchLabels:
       app: whisper-asr-webservice
