@@ -22,7 +22,7 @@ spec:
         - name: ASR_ENGINE
           value: "faster_whisper"
         - name: ASR_MODEL
-          value: "large-v3"        
+          value: "large-v2"        
         resources:
           limits:
             nvidia.com/gpu: 1
