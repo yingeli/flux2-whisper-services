@@ -21,8 +21,8 @@ spec:
         app: whisper-asr-webservice
     spec:
       containers:
-      #- image: onerahmet/openai-whisper-asr-webservice:latest-gpu
-      - image: yingeli/whisper-services:latest-gpu
+      - image: onerahmet/openai-whisper-asr-webservice:latest-gpu
+      #- image: yingeli/whisper-services:latest-gpu
         name: whisper-asr-webservice-gpu
         env:
         - name: ASR_ENGINE
