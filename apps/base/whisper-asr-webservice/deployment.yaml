@@ -26,9 +26,9 @@ spec:
         name: whisper-asr-webservice-gpu
         env:
         - name: ASR_ENGINE
-          value: "faster_whisper"
+          value: "openai_whisper"
         - name: ASR_MODEL
-          value: "large-v2"        
+          value: "large-v3"        
         resources:
           limits:
             nvidia.com/gpu: 1
